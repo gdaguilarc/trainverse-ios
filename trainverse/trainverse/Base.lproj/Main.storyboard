@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hKu-rG-ZVY">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -218,23 +218,14 @@
             </objects>
             <point key="canvasLocation" x="2660.8695652173915" y="914.73214285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--Discover View Controller-->
         <scene sceneID="khp-5n-tBA">
             <objects>
-                <viewController id="Cph-dK-A4c" sceneMemberID="viewController">
+                <viewController id="Cph-dK-A4c" customClass="DiscoverViewController" customModule="trainverse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HTP-m0-m4g">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiscoverScreen" translatesAutoresizingMaskIntoConstraints="NO" id="wcD-ku-Msh">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="wcD-ku-Msh" firstAttribute="centerY" secondItem="HTP-m0-m4g" secondAttribute="centerY" id="AEq-dV-ZWU"/>
-                            <constraint firstItem="wcD-ku-Msh" firstAttribute="centerX" secondItem="HTP-m0-m4g" secondAttribute="centerX" id="kJ7-kq-Svc"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="F0X-ef-CbK"/>
                     </view>
                     <navigationItem key="navigationItem" id="rrk-Gt-Ghw"/>
@@ -381,7 +372,6 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="DetailsScreen" width="414" height="896"/>
-        <image name="DiscoverScreen" width="414" height="896"/>
         <image name="GamificationScreen" width="414" height="896"/>
         <image name="HomeScreen" width="414" height="896"/>
         <image name="LoginScreen" width="422" height="904"/>

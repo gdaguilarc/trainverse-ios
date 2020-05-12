@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C35B1EBA246A4A66001183C0 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B1EB9246A4A66001183C0 /* DiscoverViewController.swift */; };
 		C39811E2244E371B00F2C137 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39811E1244E371B00F2C137 /* AppDelegate.swift */; };
 		C39811E4244E371B00F2C137 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39811E3244E371B00F2C137 /* SceneDelegate.swift */; };
 		C39811E6244E371C00F2C137 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39811E5244E371C00F2C137 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C35B1EB9246A4A66001183C0 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		C39811DE244E371B00F2C137 /* trainverse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trainverse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39811E1244E371B00F2C137 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C39811E3244E371B00F2C137 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				C39811EF244E372000F2C137 /* LaunchScreen.storyboard */,
 				C39811F2244E372100F2C137 /* Info.plist */,
 				C39811EA244E371C00F2C137 /* trainverse.xcdatamodeld */,
+				C35B1EB9246A4A66001183C0 /* DiscoverViewController.swift */,
 			);
 			path = trainverse;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				C39811E2244E371B00F2C137 /* AppDelegate.swift in Sources */,
 				C39811EC244E371C00F2C137 /* trainverse.xcdatamodeld in Sources */,
 				C39811E4244E371B00F2C137 /* SceneDelegate.swift in Sources */,
+				C35B1EBA246A4A66001183C0 /* DiscoverViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
