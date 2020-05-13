@@ -20,16 +20,10 @@ struct Payload:Decodable {
 }
 
 class DiscoverViewController: UIViewController {
+    var payloadData: Payload?
+ 
+    @IBOutlet weak var tableView: UITableView!
     
-    fileprivate let collectionView: UICollectionView = {
-       let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
-        let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        cv.translatesAutoresizingMaskIntoConstraints = false
-        cv.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
-        return cv
-    }()
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +38,7 @@ class DiscoverViewController: UIViewController {
             
             do {
                 let _payload = try JSONDecoder().decode(Payload.self, from: data)
+                self.payloadData = _payload
             }catch let jsonErr {
                 print("Error parsing ", jsonErr)
             }
@@ -51,16 +46,10 @@ class DiscoverViewController: UIViewController {
         }.resume()
         // Do any additional setup after loading the view.
     
-        view.addSubview(collectionView)
-        collectionView.backgroundColor = .white
-        collectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 40).isActive = true
-        collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40).isActive = true
-        collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40).isActive = true
-        collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -40).isActive = true
-        
-        collectionView.delegate = self
-        collectionView.dataSource = self
     }
+    
+    
+    
     
 
 
@@ -68,19 +57,3 @@ class DiscoverViewController: UIViewController {
 }
 
 
-extension DiscoverViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width/2.5, height: collectionView.frame.height/2)
-    }
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        cell.backgroundColor = .red
-        return cell
-    }
-    
-    
-}

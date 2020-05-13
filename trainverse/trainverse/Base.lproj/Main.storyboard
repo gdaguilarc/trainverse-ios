@@ -83,7 +83,7 @@
                                     <constraint firstAttribute="height" constant="49" id="J5O-zp-LzO"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="Cph-dK-A4c" kind="show" id="L6W-x2-CGP"/>
+                                    <segue destination="XRK-4d-8hZ" kind="show" id="BXV-fY-Ef5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PxT-SY-Ar7">
@@ -218,21 +218,34 @@
             </objects>
             <point key="canvasLocation" x="2660.8695652173915" y="914.73214285714278"/>
         </scene>
-        <!--Discover View Controller-->
-        <scene sceneID="khp-5n-tBA">
+        <!--Discover Table View Controller-->
+        <scene sceneID="ri4-EM-pNH">
             <objects>
-                <viewController id="Cph-dK-A4c" customClass="DiscoverViewController" customModule="trainverse" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="HTP-m0-m4g">
+                <tableViewController id="XRK-4d-8hZ" customClass="DiscoverTableViewController" customModule="trainverse" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1Io-As-WMe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="F0X-ef-CbK"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="rrk-Gt-Ghw"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kI1-MF-Nu2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="zelda" id="hXZ-2W-Ptn">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hXZ-2W-Ptn" id="4bQ-E4-5Vb">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="XRK-4d-8hZ" id="qBG-e8-6MO"/>
+                            <outlet property="delegate" destination="XRK-4d-8hZ" id="VwB-eT-TFk"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="MNN-kf-xVS"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kj1-TD-JAc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2661" y="-530"/>
+            <point key="canvasLocation" x="2661" y="-542"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="MbR-2o-Y4O">

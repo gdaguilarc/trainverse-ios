@@ -17,6 +17,7 @@
 		C39811F1244E372000F2C137 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39811EF244E372000F2C137 /* LaunchScreen.storyboard */; };
 		C39811FC244E372100F2C137 /* trainverseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39811FB244E372100F2C137 /* trainverseTests.swift */; };
 		C3981207244E372200F2C137 /* trainverseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3981206244E372200F2C137 /* trainverseUITests.swift */; };
+		C3D715AC246B876C00DC58E7 /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D715AB246B876C00DC58E7 /* DiscoverTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		C3981202244E372100F2C137 /* trainverseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = trainverseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3981206244E372200F2C137 /* trainverseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trainverseUITests.swift; sourceTree = "<group>"; };
 		C3981208244E372200F2C137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3D715AB246B876C00DC58E7 /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				C39811F2244E372100F2C137 /* Info.plist */,
 				C39811EA244E371C00F2C137 /* trainverse.xcdatamodeld */,
 				C35B1EB9246A4A66001183C0 /* DiscoverViewController.swift */,
+				C3D715AB246B876C00DC58E7 /* DiscoverTableViewController.swift */,
 			);
 			path = trainverse;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				C39811E2244E371B00F2C137 /* AppDelegate.swift in Sources */,
 				C39811EC244E371C00F2C137 /* trainverse.xcdatamodeld in Sources */,
 				C39811E4244E371B00F2C137 /* SceneDelegate.swift in Sources */,
+				C3D715AC246B876C00DC58E7 /* DiscoverTableViewController.swift in Sources */,
 				C35B1EBA246A4A66001183C0 /* DiscoverViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
