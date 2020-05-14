@@ -20,6 +20,7 @@
 		C3981207244E372200F2C137 /* trainverseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3981206244E372200F2C137 /* trainverseUITests.swift */; };
 		C3CA9363246CE98A00EC03F0 /* FeaturedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA9362246CE98A00EC03F0 /* FeaturedTableViewController.swift */; };
 		C3CA9365246CECC800EC03F0 /* RoutineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA9364246CECC800EC03F0 /* RoutineTableViewController.swift */; };
+		C3CA9367246CF81400EC03F0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA9366246CF81400EC03F0 /* ProfileViewController.swift */; };
 		C3D715AC246B876C00DC58E7 /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D715AB246B876C00DC58E7 /* DiscoverTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		C3981208244E372200F2C137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3CA9362246CE98A00EC03F0 /* FeaturedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedTableViewController.swift; sourceTree = "<group>"; };
 		C3CA9364246CECC800EC03F0 /* RoutineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineTableViewController.swift; sourceTree = "<group>"; };
+		C3CA9366246CF81400EC03F0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C3D715AB246B876C00DC58E7 /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +126,7 @@
 				C37E309A246CD44400D3EF1F /* HomeViewController.swift */,
 				C3CA9362246CE98A00EC03F0 /* FeaturedTableViewController.swift */,
 				C3CA9364246CECC800EC03F0 /* RoutineTableViewController.swift */,
+				C3CA9366246CF81400EC03F0 /* ProfileViewController.swift */,
 			);
 			path = trainverse;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			files = (
 				C39811E6244E371C00F2C137 /* ViewController.swift in Sources */,
 				C39811E2244E371B00F2C137 /* AppDelegate.swift in Sources */,
+				C3CA9367246CF81400EC03F0 /* ProfileViewController.swift in Sources */,
 				C39811EC244E371C00F2C137 /* trainverse.xcdatamodeld in Sources */,
 				C3CA9365246CECC800EC03F0 /* RoutineTableViewController.swift in Sources */,
 				C3CA9363246CE98A00EC03F0 /* FeaturedTableViewController.swift in Sources */,
