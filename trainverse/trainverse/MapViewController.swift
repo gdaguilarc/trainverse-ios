@@ -63,41 +63,49 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         
         
         for i in result!{
-            let objetoGym = i as! [String: Any]
-            let nombre:String = objetoGym["name"] as! String
-            let lat:Float = objetoGym["lat"] as! Float
-            let lon:Float = objetoGym["lon"] as! Float
-            print(lat)
-            print(lon)
-        }
+             let objetoGym = i as! [String: Any]
+            let name:String = objetoGym["name"] as! String
+             let lat:NSNumber = objetoGym["lat"] as! NSNumber
+             let lon:NSNumber = objetoGym["lon"] as! NSNumber
+       
+         }
         
-        //MAPA
-            
-            locationManager.delegate = self
-            locationManager.desiredAccuracy = kCLLocationAccuracyBest
-            //locationManager.requestWhenInUseAuthorization()
-            
-                //let contents = try String(contentsOf: url)
-                //print(contents)
-            map.mapType=MKMapType.hybrid
-            let cl=CLLocationCoordinate2DMake(19.283280,-99.136388)
-            map.region=MKCoordinateRegion(center: cl, latitudinalMeters: 2000, longitudinalMeters: 2000)
-            let delta=CLLocationDegrees(0.01)
-            let span=MKCoordinateSpan(latitudeDelta: delta, longitudeDelta: delta)
-            map.region=MKCoordinateRegion(center: cl, span: span)
-            let rest = MKPointAnnotation()
-            rest.coordinate = cl
-            rest.title = "Mi restaurant favorito"
-            rest.subtitle = "Restaurant Japonés"
-            map.addAnnotation(rest)
-            map.showsCompass=true
-            map.showsScale=true
-            map.showsTraffic=true
-            map.isZoomEnabled=true
-        
-        
-        
-        
+         //MAPA
+                   
+                   locationManager.delegate = self
+                   locationManager.desiredAccuracy = kCLLocationAccuracyBest
+                   //locationManager.requestWhenInUseAuthorization()
+                   
+                       //let contents = try String(contentsOf: url)
+                       //print(contents)
+                   map.mapType=MKMapType.hybrid
+                   let cl=CLLocationCoordinate2DMake(19.283280,-99.136388)
+                   map.region=MKCoordinateRegion(center: cl, latitudinalMeters: 2000, longitudinalMeters: 2000)
+                   let delta=CLLocationDegrees(0.01)
+                   let span=MKCoordinateSpan(latitudeDelta: delta, longitudeDelta: delta)
+                   map.region=MKCoordinateRegion(center: cl, span: span)
+                  
+               //Annotations
+               for i in result! {
+                   let objetoGym = i as! [String: Any]
+                   let title = objetoGym["name"] as! String
+                   let lat = objetoGym["lat"] as! Double
+                   let lon = objetoGym["lon"] as! Double
+                   
+                   let rest = MKPointAnnotation()
+                   
+                   let cc = CLLocationCoordinate2DMake(lat, lon)
+                   rest.coordinate = cc
+                   rest.title = title
+                   
+                    map.addAnnotation(rest)
+               }
+               
+                   map.showsCompass=true
+                   map.showsScale=true
+                   map.showsTraffic=true
+                   map.isZoomEnabled=true
+
         
     }
     

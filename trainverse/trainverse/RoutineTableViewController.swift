@@ -92,14 +92,22 @@ class RoutineTableViewController: UITableViewController {
     }
     */
 
-    /*
+
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         // Get the new view controller using segue.destination.
+         // Pass the selected object to the new view controller.
+         
+         
+         let sigVista = segue.destination as! ExerciseViewController
+         let indice = self.tableView.indexPathForSelectedRow?.row
+                      
+        let exercise = routine[indice!] as! [String: Any]
+      
+
+         sigVista.exercise = exercise 
+     }
+
 
 }

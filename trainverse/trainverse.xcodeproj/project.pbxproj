@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C35B1EBA246A4A66001183C0 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B1EB9246A4A66001183C0 /* DiscoverViewController.swift */; };
+		C301390B246DBBCA00AAD5E1 /* PaymentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C301390A246DBBCA00AAD5E1 /* PaymentsTableViewController.swift */; };
+		C301390D246DE00000AAD5E1 /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C301390C246DE00000AAD5E1 /* ExerciseViewController.swift */; };
+		C301390F246DEE1000AAD5E1 /* IndividualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C301390E246DEE1000AAD5E1 /* IndividualViewController.swift */; };
+		C3013911246E015E00AAD5E1 /* AchivementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3013910246E015E00AAD5E1 /* AchivementsViewController.swift */; };
 		C37E309B246CD44400D3EF1F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37E309A246CD44400D3EF1F /* HomeViewController.swift */; };
 		C39811E2244E371B00F2C137 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39811E1244E371B00F2C137 /* AppDelegate.swift */; };
 		C39811E4244E371B00F2C137 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39811E3244E371B00F2C137 /* SceneDelegate.swift */; };
@@ -43,7 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C35B1EB9246A4A66001183C0 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		C301390A246DBBCA00AAD5E1 /* PaymentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsTableViewController.swift; sourceTree = "<group>"; };
+		C301390C246DE00000AAD5E1 /* ExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
+		C301390E246DEE1000AAD5E1 /* IndividualViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualViewController.swift; sourceTree = "<group>"; };
+		C3013910246E015E00AAD5E1 /* AchivementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchivementsViewController.swift; sourceTree = "<group>"; };
 		C37E309A246CD44400D3EF1F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C39811DE244E371B00F2C137 /* trainverse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trainverse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39811E1244E371B00F2C137 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -123,13 +129,16 @@
 				C39811EF244E372000F2C137 /* LaunchScreen.storyboard */,
 				C39811F2244E372100F2C137 /* Info.plist */,
 				C39811EA244E371C00F2C137 /* trainverse.xcdatamodeld */,
-				C35B1EB9246A4A66001183C0 /* DiscoverViewController.swift */,
 				C3D715AB246B876C00DC58E7 /* DiscoverTableViewController.swift */,
 				C37E309A246CD44400D3EF1F /* HomeViewController.swift */,
 				C3CA9362246CE98A00EC03F0 /* FeaturedTableViewController.swift */,
 				C3CA9364246CECC800EC03F0 /* RoutineTableViewController.swift */,
 				C3CA9366246CF81400EC03F0 /* ProfileViewController.swift */,
 				C3CA9368246D052000EC03F0 /* MapViewController.swift */,
+				C301390A246DBBCA00AAD5E1 /* PaymentsTableViewController.swift */,
+				C301390C246DE00000AAD5E1 /* ExerciseViewController.swift */,
+				C301390E246DEE1000AAD5E1 /* IndividualViewController.swift */,
+				C3013910246E015E00AAD5E1 /* AchivementsViewController.swift */,
 			);
 			path = trainverse;
 			sourceTree = "<group>";
@@ -283,17 +292,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C301390D246DE00000AAD5E1 /* ExerciseViewController.swift in Sources */,
+				C301390F246DEE1000AAD5E1 /* IndividualViewController.swift in Sources */,
 				C3CA9369246D052000EC03F0 /* MapViewController.swift in Sources */,
 				C39811E6244E371C00F2C137 /* ViewController.swift in Sources */,
 				C39811E2244E371B00F2C137 /* AppDelegate.swift in Sources */,
 				C3CA9367246CF81400EC03F0 /* ProfileViewController.swift in Sources */,
+				C3013911246E015E00AAD5E1 /* AchivementsViewController.swift in Sources */,
+				C301390B246DBBCA00AAD5E1 /* PaymentsTableViewController.swift in Sources */,
 				C39811EC244E371C00F2C137 /* trainverse.xcdatamodeld in Sources */,
 				C3CA9365246CECC800EC03F0 /* RoutineTableViewController.swift in Sources */,
 				C3CA9363246CE98A00EC03F0 /* FeaturedTableViewController.swift in Sources */,
 				C39811E4244E371B00F2C137 /* SceneDelegate.swift in Sources */,
 				C3D715AC246B876C00DC58E7 /* DiscoverTableViewController.swift in Sources */,
 				C37E309B246CD44400D3EF1F /* HomeViewController.swift in Sources */,
-				C35B1EBA246A4A66001183C0 /* DiscoverViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

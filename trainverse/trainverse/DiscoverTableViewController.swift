@@ -137,14 +137,26 @@ class DiscoverTableViewController: UITableViewController {
     }
     */
 
-    /*
+  
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        
+        
+        let sigVista = segue.destination as! IndividualViewController
+        let indice = self.tableView.indexPathForSelectedRow?.row
+                     
+        let individuo = nuevoArray![indice!] as! [String: Any]
+        let name = individuo["name"] as! String
+        let type = individuo["type"] as! String
+        let url = individuo["thumbnail"] as! String
+
+        sigVista.name = name
+        sigVista.type = type
+        sigVista.url = url
+        
     }
-    */
 
 }
