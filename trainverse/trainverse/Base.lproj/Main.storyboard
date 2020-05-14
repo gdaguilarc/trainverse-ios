@@ -115,6 +115,14 @@
                                     <segue destination="Dkr-S3-88D" kind="show" id="DoS-G0-8io"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Heq-JZ-Hy9">
+                                <rect key="frame" x="196" y="271" width="46" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="Zb4-om-aB2" kind="show" id="JQB-1F-r6v"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9i-ZX-1yl">
                                 <rect key="frame" x="144" y="795" width="123" height="67"/>
                                 <state key="normal" title="Achivements"/>
@@ -396,6 +404,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z68-4V-GI6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="cDN-xz-qT9">
+            <objects>
+                <viewController id="Zb4-om-aB2" customClass="MapViewController" customModule="trainverse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dUp-St-CNC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="CAR-QH-oF3">
+                                <rect key="frame" x="0.0" y="58" width="414" height="838"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="gVo-eN-uMS"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fZ9-ck-xLX"/>
+                    <connections>
+                        <outlet property="map" destination="CAR-QH-oF3" id="weG-fK-mNn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Vv-fZ-mF6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1013.0434782608696" y="-542.41071428571422"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
