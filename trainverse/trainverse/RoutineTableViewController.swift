@@ -8,13 +8,30 @@
 
 import UIKit
 
-class RoutineTableViewController: UITableViewController {
+class RoutineTableViewController: UITableViewController, UISearchResultsUpdating {
 
+    var datosFiltrados = [Any]()
     
+    let searchController = UISearchController(searchResultsController: nil)
     
     var routine: [AnyObject] = []
     
-    
+    func updateSearchResults(for searchController: UISearchController) {
+        
+        // si la caja de búsuqeda es vacía, entonces mostrar todos los resultados
+        if searchController.searchBar.text! == "" {
+            datosFiltrados = routine
+        } else {
+            // Filtrar los resultados de acuerdo al texto escrito en la caja que es obtenido a través del parámetro $0
+            datosFiltrados = routine.filter{
+                let objetoMarca=$0 as! [String:Any]
+                let s:String = objetoMarca["name"] as! String;
+                return(s.lowercased().contains(searchController.searchBar.text!.lowercased())) }
+        }
+        
+        self.tableView.reloadData()
+    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +41,19 @@ class RoutineTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        //paso 5: copiar el contenido del arreglo en el arreglo filtrado
+        datosFiltrados = routine
+        
+        //Paso 6: usar la vista actual para presentar los resultados de la búsqueda
+        searchController.searchResultsUpdater = self
+        //paso 7: controlar el background de los datos al momento de hacer la búsqueda
+        searchController.dimsBackgroundDuringPresentation = false
+        //Paso 8: manejar la barra de navegación durante la busuqeda
+        searchController.hidesNavigationBarDuringPresentation = false
+        //Paso 9: Definir el contexto de la búsqueda
+        definesPresentationContext = true
+        //Paso 10: Instalar la barra de búsqueda en la cabecera de la tabla
+        tableView.tableHeaderView = searchController.searchBar
     }
 
     // MARK: - Table view data source
@@ -35,7 +65,7 @@ class RoutineTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return routine.count
+        return datosFiltrados.count
     }
 
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -49,7 +79,7 @@ class RoutineTableViewController: UITableViewController {
                           style: UITableViewCell.CellStyle.default, reuseIdentifier: "routine")
                   }
              
-                  let objetoMarca = routine[indexPath.row] as! [String: Any]
+                  let objetoMarca = datosFiltrados[indexPath.row] as! [String: Any]
                   let name:String = objetoMarca["name"] as! String
                   let reps:Int = objetoMarca["repetitions"] as! Int
                   let series:Int = objetoMarca["repetitions"] as! Int
@@ -103,7 +133,7 @@ class RoutineTableViewController: UITableViewController {
          let sigVista = segue.destination as! ExerciseViewController
          let indice = self.tableView.indexPathForSelectedRow?.row
                       
-        let exercise = routine[indice!] as! [String: Any]
+        let exercise = datosFiltrados[indice!] as! [String: Any]
       
 
          sigVista.exercise = exercise 

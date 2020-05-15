@@ -8,10 +8,29 @@
 
 import UIKit
 
-class FeaturedTableViewController: UITableViewController {
+class FeaturedTableViewController: UITableViewController, UISearchResultsUpdating {
+    
+    var datosFiltrados = [Any]()
     
     let jsonUrl = "http://martinmolina.com.mx/202011/trainverse/data.json"
+    
     var result:[Any]?
+    
+    let searchController = UISearchController(searchResultsController: nil)
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        if searchController.searchBar.text! == "" {
+            datosFiltrados = result!
+        } else {
+            // Filtrar los resultados de acuerdo al texto escrito en la caja que es obtenido a través del parámetro $0
+            datosFiltrados = result!.filter{
+                let objetoMarca=$0 as! [String:Any]
+                let s:String = objetoMarca["name"] as! String;
+                return(s.lowercased().contains(searchController.searchBar.text!.lowercased())) }
+        }
+        
+        self.tableView.reloadData()
+    }
     
     func JSONParseArray(_ string: String) -> [AnyObject]{
         if let data = string.data(using: String.Encoding.utf8){
@@ -58,6 +77,17 @@ class FeaturedTableViewController: UITableViewController {
                   // the URL was bad!
                   print("the URL was bad!")
               }
+        datosFiltrados = result!
+        
+        searchController.searchResultsUpdater = self
+        
+        searchController.dimsBackgroundDuringPresentation = false
+        
+        searchController.hidesNavigationBarDuringPresentation = false
+        
+        definesPresentationContext = true
+        
+        tableView.tableHeaderView = searchController.searchBar
     }
 
     // MARK: - Table view data source
@@ -69,7 +99,7 @@ class FeaturedTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return result!.count
+        return datosFiltrados.count
     }
 
 
@@ -84,7 +114,7 @@ class FeaturedTableViewController: UITableViewController {
                           style: UITableViewCell.CellStyle.default, reuseIdentifier: "featured")
                   }
              
-                  let objetoMarca = result![indexPath.row] as! [String: Any]
+        let objetoMarca = datosFiltrados[indexPath.row] as! [String: Any]
                   let name:String = objetoMarca["name"] as! String
                   let target:String = objetoMarca["target"] as! String
                   cell.textLabel?.text = name + " - " + target
@@ -138,7 +168,7 @@ class FeaturedTableViewController: UITableViewController {
         let sigVista = segue.destination as! RoutineTableViewController
         let indice = self.tableView.indexPathForSelectedRow?.row
                      
-        let objetoMarca = result![indice!] as! [String: Any]
+        let objetoMarca = datosFiltrados[indice!] as! [String: Any]
         let routine = objetoMarca["exercises"] as! [AnyObject]
 
         sigVista.routine = routine

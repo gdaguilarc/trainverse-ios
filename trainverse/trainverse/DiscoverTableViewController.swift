@@ -8,9 +8,31 @@
 
 import UIKit
 
-class DiscoverTableViewController: UITableViewController {
+class DiscoverTableViewController: UITableViewController, UISearchResultsUpdating {
     let jsonUrl = "http://martinmolina.com.mx/202011/trainverse/discover.json"
     var nuevoArray:[Any]?
+    
+    var datosFiltrados = [Any]()
+    //paso 3: crear un control de búsqueda
+    let searchController = UISearchController(searchResultsController: nil)
+    
+    //paso 4: crear la función updateSearchResults para cumplir con el protocolo
+    //UISearchResultsUpdating
+    func updateSearchResults(for searchController: UISearchController) {
+        
+        // si la caja de búsuqeda es vacía, entonces mostrar todos los resultados
+        if searchController.searchBar.text! == "" {
+            datosFiltrados = nuevoArray!
+        } else {
+            // Filtrar los resultados de acuerdo al texto escrito en la caja que es obtenido a través del parámetro $0
+            datosFiltrados = nuevoArray!.filter{
+                let objetoMarca=$0 as! [String:Any]
+                let s:String = objetoMarca["name"] as! String;
+                return(s.lowercased().contains(searchController.searchBar.text!.lowercased())) }
+        }
+        
+        self.tableView.reloadData()
+    }
     
     func JSONParseArray(_ string: String) -> [AnyObject]{
         if let data = string.data(using: String.Encoding.utf8){
@@ -52,7 +74,19 @@ class DiscoverTableViewController: UITableViewController {
                   // the URL was bad!
                   print("the URL was bad!")
               }
-
+        //paso 5: copiar el contenido del arreglo en el arreglo filtrado
+        datosFiltrados = nuevoArray!
+        
+        //Paso 6: usar la vista actual para presentar los resultados de la búsqueda
+        searchController.searchResultsUpdater = self
+        //paso 7: controlar el background de los datos al momento de hacer la búsqueda
+        searchController.dimsBackgroundDuringPresentation = false
+        //Paso 8: manejar la barra de navegación durante la busuqeda
+        searchController.hidesNavigationBarDuringPresentation = false
+        //Paso 9: Definir el contexto de la búsqueda
+        definesPresentationContext = true
+        //Paso 10: Instalar la barra de búsqueda en la cabecera de la tabla
+        tableView.tableHeaderView = searchController.searchBar
     
     }
     
@@ -72,7 +106,7 @@ class DiscoverTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     	
         
-        return nuevoArray!.count
+        return datosFiltrados.count
     }
 
     
@@ -84,7 +118,7 @@ class DiscoverTableViewController: UITableViewController {
             cell = UITableViewCell(
                 style: UITableViewCell.CellStyle.default, reuseIdentifier: "zelda")
         }
-        let objetoMarca = nuevoArray![indexPath.row] as! [String: Any]
+        let objetoMarca = datosFiltrados[indexPath.row] as! [String: Any]
         let s:String = objetoMarca["name"] as! String
         cell.textLabel?.text=s
         return cell
@@ -148,7 +182,7 @@ class DiscoverTableViewController: UITableViewController {
         let sigVista = segue.destination as! IndividualViewController
         let indice = self.tableView.indexPathForSelectedRow?.row
                      
-        let individuo = nuevoArray![indice!] as! [String: Any]
+        let individuo = datosFiltrados[indice!] as! [String: Any]
         let name = individuo["name"] as! String
         let type = individuo["type"] as! String
         let url = individuo["thumbnail"] as! String
