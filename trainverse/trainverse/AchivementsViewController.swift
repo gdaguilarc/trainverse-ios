@@ -91,13 +91,7 @@ class AchivementsViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-           var cell = tableView.dequeueReusableCell(withIdentifier: "achivement", for: indexPath)
-             
-             
-             if (cell == nil) {
-                 cell = UITableViewCell(
-                     style: UITableViewCell.CellStyle.default, reuseIdentifier: "achivement")
-             }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "achivement", for: indexPath)
         
              let ach = achivements![indexPath.row] as! [String: Any]
              let name:String = ach["description"] as! String
