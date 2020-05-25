@@ -3,14 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		644BF303666F5BAF178076B7 /* Pods_trainverse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88265A54F0834830E7970E3B /* Pods_trainverse.framework */; };
 		C301390B246DBBCA00AAD5E1 /* PaymentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C301390A246DBBCA00AAD5E1 /* PaymentsTableViewController.swift */; };
 		C301390D246DE00000AAD5E1 /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C301390C246DE00000AAD5E1 /* ExerciseViewController.swift */; };
 		C301390F246DEE1000AAD5E1 /* IndividualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C301390E246DEE1000AAD5E1 /* IndividualViewController.swift */; };
 		C3013911246E015E00AAD5E1 /* AchivementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3013910246E015E00AAD5E1 /* AchivementsViewController.swift */; };
+		C35A89E5247AF30700E73888 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35A89E4247AF30700E73888 /* AuthViewController.swift */; };
+		C35DCA0B2479FD3600D16DF9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C35DCA0A2479FD3500D16DF9 /* GoogleService-Info.plist */; };
 		C37E309B246CD44400D3EF1F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37E309A246CD44400D3EF1F /* HomeViewController.swift */; };
 		C39811E2244E371B00F2C137 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39811E1244E371B00F2C137 /* AppDelegate.swift */; };
 		C39811E4244E371B00F2C137 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39811E3244E371B00F2C137 /* SceneDelegate.swift */; };
@@ -46,10 +49,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		44CEBCCCB41AA65D62F1AB74 /* Pods-trainverse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trainverse.release.xcconfig"; path = "Target Support Files/Pods-trainverse/Pods-trainverse.release.xcconfig"; sourceTree = "<group>"; };
+		88265A54F0834830E7970E3B /* Pods_trainverse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_trainverse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B513FBF92A017ADB12DEBCFF /* Pods-trainverse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trainverse.debug.xcconfig"; path = "Target Support Files/Pods-trainverse/Pods-trainverse.debug.xcconfig"; sourceTree = "<group>"; };
 		C301390A246DBBCA00AAD5E1 /* PaymentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsTableViewController.swift; sourceTree = "<group>"; };
 		C301390C246DE00000AAD5E1 /* ExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
 		C301390E246DEE1000AAD5E1 /* IndividualViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualViewController.swift; sourceTree = "<group>"; };
 		C3013910246E015E00AAD5E1 /* AchivementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchivementsViewController.swift; sourceTree = "<group>"; };
+		C35A89E4247AF30700E73888 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		C35DCA0A2479FD3500D16DF9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C37E309A246CD44400D3EF1F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C39811DE244E371B00F2C137 /* trainverse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trainverse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39811E1244E371B00F2C137 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				644BF303666F5BAF178076B7 /* Pods_trainverse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +107,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44A724BABEFE2827F4041884 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B513FBF92A017ADB12DEBCFF /* Pods-trainverse.debug.xcconfig */,
+				44CEBCCCB41AA65D62F1AB74 /* Pods-trainverse.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4BABD80C45107742C49046B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88265A54F0834830E7970E3B /* Pods_trainverse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C39811D5244E371B00F2C137 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +131,8 @@
 				C39811FA244E372100F2C137 /* trainverseTests */,
 				C3981205244E372100F2C137 /* trainverseUITests */,
 				C39811DF244E371B00F2C137 /* Products */,
+				44A724BABEFE2827F4041884 /* Pods */,
+				4BABD80C45107742C49046B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +153,7 @@
 				C39811E3244E371B00F2C137 /* SceneDelegate.swift */,
 				C39811E5244E371C00F2C137 /* ViewController.swift */,
 				C39811E7244E371C00F2C137 /* Main.storyboard */,
+				C35DCA0A2479FD3500D16DF9 /* GoogleService-Info.plist */,
 				C39811ED244E372000F2C137 /* Assets.xcassets */,
 				C39811EF244E372000F2C137 /* LaunchScreen.storyboard */,
 				C39811F2244E372100F2C137 /* Info.plist */,
@@ -139,6 +168,7 @@
 				C301390C246DE00000AAD5E1 /* ExerciseViewController.swift */,
 				C301390E246DEE1000AAD5E1 /* IndividualViewController.swift */,
 				C3013910246E015E00AAD5E1 /* AchivementsViewController.swift */,
+				C35A89E4247AF30700E73888 /* AuthViewController.swift */,
 			);
 			path = trainverse;
 			sourceTree = "<group>";
@@ -168,9 +198,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C398120B244E372200F2C137 /* Build configuration list for PBXNativeTarget "trainverse" */;
 			buildPhases = (
+				91516A635DCD1A2A8E9A1010 /* [CP] Check Pods Manifest.lock */,
 				C39811DA244E371B00F2C137 /* Sources */,
 				C39811DB244E371B00F2C137 /* Frameworks */,
 				C39811DC244E371B00F2C137 /* Resources */,
+				413B64176EC0136A45E7D259 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -266,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C39811F1244E372000F2C137 /* LaunchScreen.storyboard in Resources */,
+				C35DCA0B2479FD3600D16DF9 /* GoogleService-Info.plist in Resources */,
 				C39811EE244E372000F2C137 /* Assets.xcassets in Resources */,
 				C39811E9244E371C00F2C137 /* Main.storyboard in Resources */,
 			);
@@ -287,6 +320,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		413B64176EC0136A45E7D259 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-trainverse/Pods-trainverse-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-trainverse/Pods-trainverse-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-trainverse/Pods-trainverse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91516A635DCD1A2A8E9A1010 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-trainverse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C39811DA244E371B00F2C137 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -299,6 +374,7 @@
 				C39811E2244E371B00F2C137 /* AppDelegate.swift in Sources */,
 				C3CA9367246CF81400EC03F0 /* ProfileViewController.swift in Sources */,
 				C3013911246E015E00AAD5E1 /* AchivementsViewController.swift in Sources */,
+				C35A89E5247AF30700E73888 /* AuthViewController.swift in Sources */,
 				C301390B246DBBCA00AAD5E1 /* PaymentsTableViewController.swift in Sources */,
 				C39811EC244E371C00F2C137 /* trainverse.xcdatamodeld in Sources */,
 				C3CA9365246CECC800EC03F0 /* RoutineTableViewController.swift in Sources */,
@@ -476,6 +552,7 @@
 		};
 		C398120C244E372200F2C137 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B513FBF92A017ADB12DEBCFF /* Pods-trainverse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -494,6 +571,7 @@
 		};
 		C398120D244E372200F2C137 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44CEBCCCB41AA65D62F1AB74 /* Pods-trainverse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

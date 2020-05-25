@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -34,7 +35,17 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         return [AnyObject]()
     }
 
-    
+    @IBAction func logout(_ sender: UIButton){
+        do{
+            try Auth.auth().signOut()
+            navigationController?.popToRootViewController(animated: true)
+        }catch{
+            print("Error en Logout")
+            let alert = UIAlertController(title: "Error", message: "Error en logout", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Continue", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
+    }
     
     
     
