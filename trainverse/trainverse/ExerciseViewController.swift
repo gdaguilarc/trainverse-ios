@@ -38,6 +38,13 @@ class ExerciseViewController: UIViewController {
     }
     
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+        let nextView = segue.destination as! TutorialViewController
+        let video = exercise?["video"] as? String
+        nextView.videoUrl = video
+    }
+    
     
 
   
@@ -61,6 +68,7 @@ extension UIImageView {
         
     }
 }
+
 
 
 

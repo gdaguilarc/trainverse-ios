@@ -14,6 +14,8 @@
 		C3013911246E015E00AAD5E1 /* AchivementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3013910246E015E00AAD5E1 /* AchivementsViewController.swift */; };
 		C35A89E5247AF30700E73888 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35A89E4247AF30700E73888 /* AuthViewController.swift */; };
 		C35DCA0B2479FD3600D16DF9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C35DCA0A2479FD3500D16DF9 /* GoogleService-Info.plist */; };
+		C3726E53248476AC0099849F /* PaymentCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3726E52248476AC0099849F /* PaymentCardsViewController.swift */; };
+		C3726E5524847A2B0099849F /* NewCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3726E5424847A2B0099849F /* NewCardViewController.swift */; };
 		C37E309B246CD44400D3EF1F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37E309A246CD44400D3EF1F /* HomeViewController.swift */; };
 		C39811E2244E371B00F2C137 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39811E1244E371B00F2C137 /* AppDelegate.swift */; };
 		C39811E4244E371B00F2C137 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39811E3244E371B00F2C137 /* SceneDelegate.swift */; };
@@ -28,7 +30,10 @@
 		C3CA9365246CECC800EC03F0 /* RoutineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA9364246CECC800EC03F0 /* RoutineTableViewController.swift */; };
 		C3CA9367246CF81400EC03F0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA9366246CF81400EC03F0 /* ProfileViewController.swift */; };
 		C3CA9369246D052000EC03F0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA9368246D052000EC03F0 /* MapViewController.swift */; };
+		C3CD963224834A9800B3B1BE /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CD963124834A9800B3B1BE /* TutorialViewController.swift */; };
 		C3D715AC246B876C00DC58E7 /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D715AB246B876C00DC58E7 /* DiscoverTableViewController.swift */; };
+		C3E408D624883E9D00965B89 /* MLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E408D524883E9D00965B89 /* MLViewController.swift */; };
+		C3EAF4DE248848FF0080A396 /* TrainVerseML.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C3EAF4DD248848FF0080A396 /* TrainVerseML.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +63,8 @@
 		C3013910246E015E00AAD5E1 /* AchivementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchivementsViewController.swift; sourceTree = "<group>"; };
 		C35A89E4247AF30700E73888 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		C35DCA0A2479FD3500D16DF9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C3726E52248476AC0099849F /* PaymentCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCardsViewController.swift; sourceTree = "<group>"; };
+		C3726E5424847A2B0099849F /* NewCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCardViewController.swift; sourceTree = "<group>"; };
 		C37E309A246CD44400D3EF1F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C39811DE244E371B00F2C137 /* trainverse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trainverse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39811E1244E371B00F2C137 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,7 +85,10 @@
 		C3CA9364246CECC800EC03F0 /* RoutineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineTableViewController.swift; sourceTree = "<group>"; };
 		C3CA9366246CF81400EC03F0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C3CA9368246D052000EC03F0 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		C3CD963124834A9800B3B1BE /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		C3D715AB246B876C00DC58E7 /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
+		C3E408D524883E9D00965B89 /* MLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLViewController.swift; sourceTree = "<group>"; };
+		C3EAF4DD248848FF0080A396 /* TrainVerseML.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TrainVerseML.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +159,7 @@
 		C39811E0244E371B00F2C137 /* trainverse */ = {
 			isa = PBXGroup;
 			children = (
+				C3EAF4DD248848FF0080A396 /* TrainVerseML.mlmodel */,
 				C39811E1244E371B00F2C137 /* AppDelegate.swift */,
 				C39811E3244E371B00F2C137 /* SceneDelegate.swift */,
 				C39811E5244E371C00F2C137 /* ViewController.swift */,
@@ -169,6 +180,10 @@
 				C301390E246DEE1000AAD5E1 /* IndividualViewController.swift */,
 				C3013910246E015E00AAD5E1 /* AchivementsViewController.swift */,
 				C35A89E4247AF30700E73888 /* AuthViewController.swift */,
+				C3CD963124834A9800B3B1BE /* TutorialViewController.swift */,
+				C3726E52248476AC0099849F /* PaymentCardsViewController.swift */,
+				C3726E5424847A2B0099849F /* NewCardViewController.swift */,
+				C3E408D524883E9D00965B89 /* MLViewController.swift */,
 			);
 			path = trainverse;
 			sourceTree = "<group>";
@@ -367,16 +382,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3EAF4DE248848FF0080A396 /* TrainVerseML.mlmodel in Sources */,
 				C301390D246DE00000AAD5E1 /* ExerciseViewController.swift in Sources */,
 				C301390F246DEE1000AAD5E1 /* IndividualViewController.swift in Sources */,
 				C3CA9369246D052000EC03F0 /* MapViewController.swift in Sources */,
+				C3726E53248476AC0099849F /* PaymentCardsViewController.swift in Sources */,
 				C39811E6244E371C00F2C137 /* ViewController.swift in Sources */,
+				C3726E5524847A2B0099849F /* NewCardViewController.swift in Sources */,
 				C39811E2244E371B00F2C137 /* AppDelegate.swift in Sources */,
 				C3CA9367246CF81400EC03F0 /* ProfileViewController.swift in Sources */,
 				C3013911246E015E00AAD5E1 /* AchivementsViewController.swift in Sources */,
 				C35A89E5247AF30700E73888 /* AuthViewController.swift in Sources */,
 				C301390B246DBBCA00AAD5E1 /* PaymentsTableViewController.swift in Sources */,
+				C3E408D624883E9D00965B89 /* MLViewController.swift in Sources */,
 				C39811EC244E371C00F2C137 /* trainverse.xcdatamodeld in Sources */,
+				C3CD963224834A9800B3B1BE /* TutorialViewController.swift in Sources */,
 				C3CA9365246CECC800EC03F0 /* RoutineTableViewController.swift in Sources */,
 				C3CA9363246CE98A00EC03F0 /* FeaturedTableViewController.swift in Sources */,
 				C39811E4244E371B00F2C137 /* SceneDelegate.swift in Sources */,
