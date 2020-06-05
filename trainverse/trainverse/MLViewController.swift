@@ -27,7 +27,7 @@ class MLViewController: UIViewController, UIImagePickerControllerDelegate & UINa
     @IBAction func execML(){
         let modelFile = TrainVerseML()
         let model = try! VNCoreMLModel(for: modelFile.model)
-        
+        
         let imageCI = CIImage(image: imageView.image!)
         let handler = VNImageRequestHandler(ciImage: imageCI!)
         
