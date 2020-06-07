@@ -6,7 +6,4 @@
 //  Copyright © 2020 itesm. All rights reserved.
 //
 
-import Foundation
 
-
-struct PersonInfo

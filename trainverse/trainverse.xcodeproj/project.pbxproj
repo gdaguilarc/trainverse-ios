@@ -7,11 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		644BF303666F5BAF178076B7 /* Pods_trainverse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88265A54F0834830E7970E3B /* Pods_trainverse.framework */; };
+		1FD60F4C7798C2BF66379238 /* Pods_trainverse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4933DE797A1F719548E6998D /* Pods_trainverse.framework */; };
 		C301390B246DBBCA00AAD5E1 /* PaymentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C301390A246DBBCA00AAD5E1 /* PaymentsTableViewController.swift */; };
 		C301390D246DE00000AAD5E1 /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C301390C246DE00000AAD5E1 /* ExerciseViewController.swift */; };
 		C301390F246DEE1000AAD5E1 /* IndividualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C301390E246DEE1000AAD5E1 /* IndividualViewController.swift */; };
 		C3013911246E015E00AAD5E1 /* AchivementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3013910246E015E00AAD5E1 /* AchivementsViewController.swift */; };
+		C3414D08248C637B0056DFF8 /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3414CE8248C637B0056DFF8 /* ExerciseViewController.swift */; };
+		C3414D09248C637B0056DFF8 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3414CE9248C637B0056DFF8 /* AuthViewController.swift */; };
+		C3414D0A248C637B0056DFF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3414CEA248C637B0056DFF8 /* ViewController.swift */; };
+		C3414D0B248C637B0056DFF8 /* PaymentCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3414CEB248C637B0056DFF8 /* PaymentCardsViewController.swift */; };
+		C3414D0C248C637B0056DFF8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3414CEC248C637B0056DFF8 /* MapViewController.swift */; };
+		C3414D0D248C637B0056DFF8 /* MLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3414CED248C637B0056DFF8 /* MLViewController.swift */; };
+		C3414D0F248C637B0056DFF8 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3414CEF248C637B0056DFF8 /* DiscoverViewController.swift */; };
+		C3414D10248C637B0056DFF8 /* Discover.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3414CF1248C637B0056DFF8 /* Discover.swift */; };
+		C3414D12248C637B0056DFF8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3414CF3248C637B0056DFF8 /* HomeViewController.swift */; };
+		C3414D14248C637B0056DFF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3414CF6248C637B0056DFF8 /* Main.storyboard */; };
+		C3414D15248C637B0056DFF8 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3414CF8248C637B0056DFF8 /* TutorialViewController.swift */; };
+		C3414D16248C637B0056DFF8 /* RoutineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3414CF9248C637B0056DFF8 /* RoutineViewController.swift */; };
+		C3414D17248C637B0056DFF8 /* RoutineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3414CFA248C637B0056DFF8 /* RoutineTableViewController.swift */; };
+		C3414D18248C637B0056DFF8 /* FeaturedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3414CFB248C637B0056DFF8 /* FeaturedTableViewController.swift */; };
+		C3414D19248C637B0056DFF8 /* AchivementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3414CFC248C637B0056DFF8 /* AchivementsViewController.swift */; };
+		C3414D1A248C637B0056DFF8 /* trainverse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3414CFD248C637B0056DFF8 /* trainverse.xcdatamodeld */; };
+		C3414D1B248C637B0056DFF8 /* NewCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3414CFF248C637B0056DFF8 /* NewCardViewController.swift */; };
+		C3414D1C248C637B0056DFF8 /* PaymentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3414D00248C637B0056DFF8 /* PaymentsTableViewController.swift */; };
+		C3414D1D248C637B0056DFF8 /* TrainVerseML.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C3414D01248C637B0056DFF8 /* TrainVerseML.mlmodel */; };
+		C3414D1E248C637B0056DFF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3414D02248C637B0056DFF8 /* AppDelegate.swift */; };
+		C3414D1F248C637B0056DFF8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3414D03248C637B0056DFF8 /* ProfileViewController.swift */; };
+		C3414D20248C637B0056DFF8 /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3414D04248C637B0056DFF8 /* DiscoverTableViewController.swift */; };
+		C3414D21248C637B0056DFF8 /* IndividualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3414D05248C637B0056DFF8 /* IndividualViewController.swift */; };
+		C3414D23248C637B0056DFF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3414D07248C637B0056DFF8 /* SceneDelegate.swift */; };
+		C3414D25248C638E0056DFF8 /* TrainVerse2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C3414D24248C638E0056DFF8 /* TrainVerse2.mlmodel */; };
 		C35A89E5247AF30700E73888 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35A89E4247AF30700E73888 /* AuthViewController.swift */; };
 		C35DCA0B2479FD3600D16DF9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C35DCA0A2479FD3500D16DF9 /* GoogleService-Info.plist */; };
 		C3726E53248476AC0099849F /* PaymentCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3726E52248476AC0099849F /* PaymentCardsViewController.swift */; };
@@ -20,8 +45,6 @@
 		C39811E2244E371B00F2C137 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39811E1244E371B00F2C137 /* AppDelegate.swift */; };
 		C39811E4244E371B00F2C137 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39811E3244E371B00F2C137 /* SceneDelegate.swift */; };
 		C39811E6244E371C00F2C137 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39811E5244E371C00F2C137 /* ViewController.swift */; };
-		C39811E9244E371C00F2C137 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39811E7244E371C00F2C137 /* Main.storyboard */; };
-		C39811EC244E371C00F2C137 /* trainverse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C39811EA244E371C00F2C137 /* trainverse.xcdatamodeld */; };
 		C39811EE244E372000F2C137 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C39811ED244E372000F2C137 /* Assets.xcassets */; };
 		C39811F1244E372000F2C137 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39811EF244E372000F2C137 /* LaunchScreen.storyboard */; };
 		C39811FC244E372100F2C137 /* trainverseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39811FB244E372100F2C137 /* trainverseTests.swift */; };
@@ -33,7 +56,6 @@
 		C3CD963224834A9800B3B1BE /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CD963124834A9800B3B1BE /* TutorialViewController.swift */; };
 		C3D715AC246B876C00DC58E7 /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D715AB246B876C00DC58E7 /* DiscoverTableViewController.swift */; };
 		C3E408D624883E9D00965B89 /* MLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E408D524883E9D00965B89 /* MLViewController.swift */; };
-		C3EAF4DE248848FF0080A396 /* TrainVerseML.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C3EAF4DD248848FF0080A396 /* TrainVerseML.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,13 +76,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		44CEBCCCB41AA65D62F1AB74 /* Pods-trainverse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trainverse.release.xcconfig"; path = "Target Support Files/Pods-trainverse/Pods-trainverse.release.xcconfig"; sourceTree = "<group>"; };
-		88265A54F0834830E7970E3B /* Pods_trainverse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_trainverse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B513FBF92A017ADB12DEBCFF /* Pods-trainverse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trainverse.debug.xcconfig"; path = "Target Support Files/Pods-trainverse/Pods-trainverse.debug.xcconfig"; sourceTree = "<group>"; };
+		4933DE797A1F719548E6998D /* Pods_trainverse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_trainverse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C301390A246DBBCA00AAD5E1 /* PaymentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsTableViewController.swift; sourceTree = "<group>"; };
 		C301390C246DE00000AAD5E1 /* ExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
 		C301390E246DEE1000AAD5E1 /* IndividualViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualViewController.swift; sourceTree = "<group>"; };
 		C3013910246E015E00AAD5E1 /* AchivementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchivementsViewController.swift; sourceTree = "<group>"; };
+		C3414CE8248C637B0056DFF8 /* ExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
+		C3414CE9248C637B0056DFF8 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		C3414CEA248C637B0056DFF8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C3414CEB248C637B0056DFF8 /* PaymentCardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentCardsViewController.swift; sourceTree = "<group>"; };
+		C3414CEC248C637B0056DFF8 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		C3414CED248C637B0056DFF8 /* MLViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLViewController.swift; sourceTree = "<group>"; };
+		C3414CEE248C637B0056DFF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3414CEF248C637B0056DFF8 /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		C3414CF1248C637B0056DFF8 /* Discover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Discover.swift; sourceTree = "<group>"; };
+		C3414CF2248C637B0056DFF8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C3414CF3248C637B0056DFF8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C3414CF5248C637B0056DFF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C3414CF7248C637B0056DFF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C3414CF8248C637B0056DFF8 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		C3414CF9248C637B0056DFF8 /* RoutineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineViewController.swift; sourceTree = "<group>"; };
+		C3414CFA248C637B0056DFF8 /* RoutineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineTableViewController.swift; sourceTree = "<group>"; };
+		C3414CFB248C637B0056DFF8 /* FeaturedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedTableViewController.swift; sourceTree = "<group>"; };
+		C3414CFC248C637B0056DFF8 /* AchivementsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchivementsViewController.swift; sourceTree = "<group>"; };
+		C3414CFE248C637B0056DFF8 /* trainverse.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = trainverse.xcdatamodel; sourceTree = "<group>"; };
+		C3414CFF248C637B0056DFF8 /* NewCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCardViewController.swift; sourceTree = "<group>"; };
+		C3414D00248C637B0056DFF8 /* PaymentsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsTableViewController.swift; sourceTree = "<group>"; };
+		C3414D01248C637B0056DFF8 /* TrainVerseML.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TrainVerseML.mlmodel; sourceTree = "<group>"; };
+		C3414D02248C637B0056DFF8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C3414D03248C637B0056DFF8 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C3414D04248C637B0056DFF8 /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
+		C3414D05248C637B0056DFF8 /* IndividualViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndividualViewController.swift; sourceTree = "<group>"; };
+		C3414D06248C637B0056DFF8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3414D07248C637B0056DFF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C3414D24248C638E0056DFF8 /* TrainVerse2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TrainVerse2.mlmodel; sourceTree = "<group>"; };
 		C35A89E4247AF30700E73888 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		C35DCA0A2479FD3500D16DF9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C3726E52248476AC0099849F /* PaymentCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCardsViewController.swift; sourceTree = "<group>"; };
@@ -71,7 +120,6 @@
 		C39811E3244E371B00F2C137 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C39811E5244E371C00F2C137 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C39811E8244E371C00F2C137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C39811EB244E371C00F2C137 /* trainverse.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = trainverse.xcdatamodel; sourceTree = "<group>"; };
 		C39811ED244E372000F2C137 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C39811F0244E372000F2C137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C39811F2244E372100F2C137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -88,7 +136,8 @@
 		C3CD963124834A9800B3B1BE /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		C3D715AB246B876C00DC58E7 /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
 		C3E408D524883E9D00965B89 /* MLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLViewController.swift; sourceTree = "<group>"; };
-		C3EAF4DD248848FF0080A396 /* TrainVerseML.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TrainVerseML.mlmodel; sourceTree = "<group>"; };
+		F51E6ADF64638350712C0776 /* Pods-trainverse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trainverse.release.xcconfig"; path = "Target Support Files/Pods-trainverse/Pods-trainverse.release.xcconfig"; sourceTree = "<group>"; };
+		F89D5BD4E9B9C2FD124AD26F /* Pods-trainverse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trainverse.debug.xcconfig"; path = "Target Support Files/Pods-trainverse/Pods-trainverse.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				644BF303666F5BAF178076B7 /* Pods_trainverse.framework in Frameworks */,
+				1FD60F4C7798C2BF66379238 /* Pods_trainverse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,18 +169,53 @@
 		44A724BABEFE2827F4041884 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B513FBF92A017ADB12DEBCFF /* Pods-trainverse.debug.xcconfig */,
-				44CEBCCCB41AA65D62F1AB74 /* Pods-trainverse.release.xcconfig */,
+				F89D5BD4E9B9C2FD124AD26F /* Pods-trainverse.debug.xcconfig */,
+				F51E6ADF64638350712C0776 /* Pods-trainverse.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		4BABD80C45107742C49046B3 /* Frameworks */ = {
+		C3414CE7248C637B0056DFF8 /* trainverse */ = {
 			isa = PBXGroup;
 			children = (
-				88265A54F0834830E7970E3B /* Pods_trainverse.framework */,
+				C3414CE8248C637B0056DFF8 /* ExerciseViewController.swift */,
+				C3414CE9248C637B0056DFF8 /* AuthViewController.swift */,
+				C3414CEA248C637B0056DFF8 /* ViewController.swift */,
+				C3414CEB248C637B0056DFF8 /* PaymentCardsViewController.swift */,
+				C3414CEC248C637B0056DFF8 /* MapViewController.swift */,
+				C3414CED248C637B0056DFF8 /* MLViewController.swift */,
+				C3414CEE248C637B0056DFF8 /* Assets.xcassets */,
+				C3414CEF248C637B0056DFF8 /* DiscoverViewController.swift */,
+				C3414CF0248C637B0056DFF8 /* Models */,
+				C3414CF2248C637B0056DFF8 /* GoogleService-Info.plist */,
+				C3414CF3248C637B0056DFF8 /* HomeViewController.swift */,
+				C3414CF4248C637B0056DFF8 /* LaunchScreen.storyboard */,
+				C3414CF6248C637B0056DFF8 /* Main.storyboard */,
+				C3414CF8248C637B0056DFF8 /* TutorialViewController.swift */,
+				C3414CF9248C637B0056DFF8 /* RoutineViewController.swift */,
+				C3414CFA248C637B0056DFF8 /* RoutineTableViewController.swift */,
+				C3414CFB248C637B0056DFF8 /* FeaturedTableViewController.swift */,
+				C3414CFC248C637B0056DFF8 /* AchivementsViewController.swift */,
+				C3414CFD248C637B0056DFF8 /* trainverse.xcdatamodeld */,
+				C3414CFF248C637B0056DFF8 /* NewCardViewController.swift */,
+				C3414D00248C637B0056DFF8 /* PaymentsTableViewController.swift */,
+				C3414D01248C637B0056DFF8 /* TrainVerseML.mlmodel */,
+				C3414D02248C637B0056DFF8 /* AppDelegate.swift */,
+				C3414D03248C637B0056DFF8 /* ProfileViewController.swift */,
+				C3414D04248C637B0056DFF8 /* DiscoverTableViewController.swift */,
+				C3414D05248C637B0056DFF8 /* IndividualViewController.swift */,
+				C3414D06248C637B0056DFF8 /* Info.plist */,
+				C3414D07248C637B0056DFF8 /* SceneDelegate.swift */,
 			);
-			name = Frameworks;
+			name = trainverse;
+			sourceTree = "<group>";
+		};
+		C3414CF0248C637B0056DFF8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C3414CF1248C637B0056DFF8 /* Discover.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		C39811D5244E371B00F2C137 = {
@@ -142,7 +226,7 @@
 				C3981205244E372100F2C137 /* trainverseUITests */,
 				C39811DF244E371B00F2C137 /* Products */,
 				44A724BABEFE2827F4041884 /* Pods */,
-				4BABD80C45107742C49046B3 /* Frameworks */,
+				D2D5CB6C6E412568530AA39D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,16 +243,16 @@
 		C39811E0244E371B00F2C137 /* trainverse */ = {
 			isa = PBXGroup;
 			children = (
-				C3EAF4DD248848FF0080A396 /* TrainVerseML.mlmodel */,
 				C39811E1244E371B00F2C137 /* AppDelegate.swift */,
 				C39811E3244E371B00F2C137 /* SceneDelegate.swift */,
 				C39811E5244E371C00F2C137 /* ViewController.swift */,
 				C39811E7244E371C00F2C137 /* Main.storyboard */,
+				C3414D24248C638E0056DFF8 /* TrainVerse2.mlmodel */,
+				C3414CE7248C637B0056DFF8 /* trainverse */,
 				C35DCA0A2479FD3500D16DF9 /* GoogleService-Info.plist */,
 				C39811ED244E372000F2C137 /* Assets.xcassets */,
 				C39811EF244E372000F2C137 /* LaunchScreen.storyboard */,
 				C39811F2244E372100F2C137 /* Info.plist */,
-				C39811EA244E371C00F2C137 /* trainverse.xcdatamodeld */,
 				C3D715AB246B876C00DC58E7 /* DiscoverTableViewController.swift */,
 				C37E309A246CD44400D3EF1F /* HomeViewController.swift */,
 				C3CA9362246CE98A00EC03F0 /* FeaturedTableViewController.swift */,
@@ -206,6 +290,14 @@
 			path = trainverseUITests;
 			sourceTree = "<group>";
 		};
+		D2D5CB6C6E412568530AA39D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4933DE797A1F719548E6998D /* Pods_trainverse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -213,11 +305,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C398120B244E372200F2C137 /* Build configuration list for PBXNativeTarget "trainverse" */;
 			buildPhases = (
-				91516A635DCD1A2A8E9A1010 /* [CP] Check Pods Manifest.lock */,
+				61C8B2611FED49490B46742E /* [CP] Check Pods Manifest.lock */,
 				C39811DA244E371B00F2C137 /* Sources */,
 				C39811DB244E371B00F2C137 /* Frameworks */,
 				C39811DC244E371B00F2C137 /* Resources */,
-				413B64176EC0136A45E7D259 /* [CP] Embed Pods Frameworks */,
+				72FA7455357B3058F0CC9700 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -315,7 +407,7 @@
 				C39811F1244E372000F2C137 /* LaunchScreen.storyboard in Resources */,
 				C35DCA0B2479FD3600D16DF9 /* GoogleService-Info.plist in Resources */,
 				C39811EE244E372000F2C137 /* Assets.xcassets in Resources */,
-				C39811E9244E371C00F2C137 /* Main.storyboard in Resources */,
+				C3414D14248C637B0056DFF8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,24 +428,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		413B64176EC0136A45E7D259 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-trainverse/Pods-trainverse-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-trainverse/Pods-trainverse-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-trainverse/Pods-trainverse-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		91516A635DCD1A2A8E9A1010 /* [CP] Check Pods Manifest.lock */ = {
+		61C8B2611FED49490B46742E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -375,6 +450,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		72FA7455357B3058F0CC9700 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-trainverse/Pods-trainverse-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-trainverse/Pods-trainverse-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-trainverse/Pods-trainverse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -382,24 +474,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3EAF4DE248848FF0080A396 /* TrainVerseML.mlmodel in Sources */,
+				C3414D19248C637B0056DFF8 /* AchivementsViewController.swift in Sources */,
+				C3414D21248C637B0056DFF8 /* IndividualViewController.swift in Sources */,
+				C3414D09248C637B0056DFF8 /* AuthViewController.swift in Sources */,
+				C3414D23248C637B0056DFF8 /* SceneDelegate.swift in Sources */,
+				C3414D0D248C637B0056DFF8 /* MLViewController.swift in Sources */,
+				C3414D08248C637B0056DFF8 /* ExerciseViewController.swift in Sources */,
+				C3414D1B248C637B0056DFF8 /* NewCardViewController.swift in Sources */,
+				C3414D18248C637B0056DFF8 /* FeaturedTableViewController.swift in Sources */,
 				C301390D246DE00000AAD5E1 /* ExerciseViewController.swift in Sources */,
 				C301390F246DEE1000AAD5E1 /* IndividualViewController.swift in Sources */,
 				C3CA9369246D052000EC03F0 /* MapViewController.swift in Sources */,
 				C3726E53248476AC0099849F /* PaymentCardsViewController.swift in Sources */,
+				C3414D0A248C637B0056DFF8 /* ViewController.swift in Sources */,
+				C3414D0C248C637B0056DFF8 /* MapViewController.swift in Sources */,
 				C39811E6244E371C00F2C137 /* ViewController.swift in Sources */,
+				C3414D25248C638E0056DFF8 /* TrainVerse2.mlmodel in Sources */,
 				C3726E5524847A2B0099849F /* NewCardViewController.swift in Sources */,
 				C39811E2244E371B00F2C137 /* AppDelegate.swift in Sources */,
+				C3414D16248C637B0056DFF8 /* RoutineViewController.swift in Sources */,
 				C3CA9367246CF81400EC03F0 /* ProfileViewController.swift in Sources */,
 				C3013911246E015E00AAD5E1 /* AchivementsViewController.swift in Sources */,
+				C3414D17248C637B0056DFF8 /* RoutineTableViewController.swift in Sources */,
 				C35A89E5247AF30700E73888 /* AuthViewController.swift in Sources */,
+				C3414D1E248C637B0056DFF8 /* AppDelegate.swift in Sources */,
+				C3414D1F248C637B0056DFF8 /* ProfileViewController.swift in Sources */,
+				C3414D1A248C637B0056DFF8 /* trainverse.xcdatamodeld in Sources */,
+				C3414D1D248C637B0056DFF8 /* TrainVerseML.mlmodel in Sources */,
 				C301390B246DBBCA00AAD5E1 /* PaymentsTableViewController.swift in Sources */,
 				C3E408D624883E9D00965B89 /* MLViewController.swift in Sources */,
-				C39811EC244E371C00F2C137 /* trainverse.xcdatamodeld in Sources */,
+				C3414D0F248C637B0056DFF8 /* DiscoverViewController.swift in Sources */,
+				C3414D12248C637B0056DFF8 /* HomeViewController.swift in Sources */,
+				C3414D10248C637B0056DFF8 /* Discover.swift in Sources */,
+				C3414D15248C637B0056DFF8 /* TutorialViewController.swift in Sources */,
 				C3CD963224834A9800B3B1BE /* TutorialViewController.swift in Sources */,
+				C3414D20248C637B0056DFF8 /* DiscoverTableViewController.swift in Sources */,
+				C3414D0B248C637B0056DFF8 /* PaymentCardsViewController.swift in Sources */,
 				C3CA9365246CECC800EC03F0 /* RoutineTableViewController.swift in Sources */,
 				C3CA9363246CE98A00EC03F0 /* FeaturedTableViewController.swift in Sources */,
 				C39811E4244E371B00F2C137 /* SceneDelegate.swift in Sources */,
+				C3414D1C248C637B0056DFF8 /* PaymentsTableViewController.swift in Sources */,
 				C3D715AC246B876C00DC58E7 /* DiscoverTableViewController.swift in Sources */,
 				C37E309B246CD44400D3EF1F /* HomeViewController.swift in Sources */,
 			);
@@ -437,6 +551,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		C3414CF4248C637B0056DFF8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3414CF5248C637B0056DFF8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C3414CF6248C637B0056DFF8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3414CF7248C637B0056DFF8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		C39811E7244E371C00F2C137 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -572,7 +702,7 @@
 		};
 		C398120C244E372200F2C137 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B513FBF92A017ADB12DEBCFF /* Pods-trainverse.debug.xcconfig */;
+			baseConfigurationReference = F89D5BD4E9B9C2FD124AD26F /* Pods-trainverse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -591,7 +721,7 @@
 		};
 		C398120D244E372200F2C137 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44CEBCCCB41AA65D62F1AB74 /* Pods-trainverse.release.xcconfig */;
+			baseConfigurationReference = F51E6ADF64638350712C0776 /* Pods-trainverse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -734,12 +864,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		C39811EA244E371C00F2C137 /* trainverse.xcdatamodeld */ = {
+		C3414CFD248C637B0056DFF8 /* trainverse.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				C39811EB244E371C00F2C137 /* trainverse.xcdatamodel */,
+				C3414CFE248C637B0056DFF8 /* trainverse.xcdatamodel */,
 			);
-			currentVersion = C39811EB244E371C00F2C137 /* trainverse.xcdatamodel */;
+			currentVersion = C3414CFE248C637B0056DFF8 /* trainverse.xcdatamodel */;
 			path = trainverse.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
